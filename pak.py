@@ -153,18 +153,10 @@ def unpack_pak(pak_file, unpack_loc):
 		except IOError:
 			sys.exit(1)
 
-# createpak("/mnt/c/users/dende/desktop/semiworking","/mnt/c/users/dende/desktop")
-# createpak("fsm",".")
-# unpack_pak('crash.pak',"dog")
-
-# with open("haha.txt",'wb') as f:
-# 	text = find_file_in_pak("sofplus.cfg","sofplus.pak")
-# 	f.write(text)
 
 # sys.argv[0] is python script name
-# unpack bla.pak outdir
-
-# python script.py unpack file.pak outdir
+# python3 pak.py unpack in_pak out_folder
+# python3 pak.py pack in_folder out_pak
 if sys.argv[1] == "unpack" and len(sys.argv) == 4:
 	unpak_this = sys.argv[2]
 	to_here = sys.argv[3]
